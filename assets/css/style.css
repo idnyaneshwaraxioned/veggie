@@ -106,11 +106,14 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 50%;
+}
 nav{
   float: right;
-  position: absolute;
-  top: 20px;
-  right: 80px;
 }
 .menu-item a{
   padding: 10px 15px;
@@ -254,14 +257,225 @@ article{
   text-align: center;
   margin: 20px 0;
 }
-/*=================================
-  main styling ends here
-=================================*/
+/* Months Special section start here */
 
+/* About section start here */
+.about-section{
+    width: 100%;
+    position: relative;
+}
+.about-section figure{
+    width: 100%;
+    height: 700px;
+}
+.about-section figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.about-content{
+    width: 50%;
+    position: absolute;
+    top: 20px;
+    z-index: 2;
+    margin: 35px 0;
+    text-align: center;
+}  
+.about-content h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.about-content p{
+    font-size: 2.2rem;
+    padding: 100px 20px;
+}
+/* About section ends here */
+
+/* List menu section start here */
+.menu-section{
+    width: 100%;
+    padding: 80px 0;
+}
+.menu-section h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+.main-menu{
+    text-align: center;
+    margin: 60px 0;
+}
+.main-menu li{
+    font-size: 1.4rem;
+    margin: 0 18px;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list .left-list, .menu-list .right-list {
+    width: 90%;
+    margin: 0 30px;
+}
+.left-list li ,.right-list li{
+    padding: 27px 0;
+}
+.left-list li h3, .right-list li h3{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+.left-list li p, .right-list li p{
+    font-size: 1.3rem;
+    font-style: italic;
+}
+/* List menu section ends here */
+
+/* Contact section start here */
+.contact-section{
+    width: 100%;
+    height: 810px;
+    position: relative;
+    text-align: end;
+    z-index: -1;
+}
+.contact-section figure{
+    width: 100%;
+    height: 100%;
+}
+.contact-section figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.contact-content{
+    position: absolute;
+    top: 0;
+    right: 68px;
+    padding: 68px 0;
+    text-align: center;
+}
+.contact-content > h2{
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+.contact-content ul{
+    display: flex;
+    padding: 40px 0;
+}
+.contact-content ul li{
+    margin: 0 50px;
+    text-align: left;
+}
+
+.contact-content ul li h2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+.contact-content ul li p{
+    font-size: 1.2rem;
+}
+.form{
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.form h4{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: left;
+}
+form
+{
+    text-align: left;
+    width: 100%;
+}
+form input[type="text"], form input[type="email"]{
+    padding: 5px;
+    width: 45%;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E7E9E8;
+    background-color: transparent;
+}
+form input[type="text"]{
+    margin-right: 20px;
+}
+form textarea{
+    padding: 5px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #E7E9E8;
+    background-color: transparent;
+}
+.btn-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form input[type="submit"]{
+    font-size: 1.4rem;
+    padding: 15px 30px;
+    margin: 35px 0;
+}
+/* Contact section ends here */
+/*==========================￼
 /*=================================
   footer styling starts here
 =================================*/ 
-
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #ADA8AD;
+}
+footer::before{
+    content: '';
+    width: 90%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-color: #E7E9E8;
+}
+footer h3{
+    font-size: 1.4rem;
+}
+footer h3 .fa{
+    color: #ff0000;
+}
+footer h3 span{
+    color: #008000;
+}
+footer .social-links{
+    float: right;
+}
+footer .social-links a{
+    padding: 5px 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 1px solid #000000;    
+}
+footer .social-links .fa{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
 
 
 
